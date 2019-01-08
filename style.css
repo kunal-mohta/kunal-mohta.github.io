@@ -1,0 +1,91 @@
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100vw; 
+  background: #F9F8EB;
+}
+
+@font-face {
+  src: url('./fonts/ProximaNovaRegular.ttf');
+  font-family: 'proxima';
+}
+
+@font-face {
+  src: url('./fonts/Product\ Sans\ Bold.ttf');
+  font-family: 'product sans';
+  font-weight: bold;
+}
+
+nav {
+  height: 60px;
+  width: 100vw;
+  background: #FD5F00;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 45vw;
+  justify-content: space-around;
+}
+
+#menu li {
+  font-family: 'proxima';
+  color: #fff;
+  transition: color 0.2s linear;
+}
+
+#menu li:hover {
+  cursor: pointer;
+  color: #05004E;
+}
+
+#landing {
+  margin-top: 15vh;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#intro, #role {
+  font-family: 'product sans';
+  font-weight: bold;
+}
+
+#intro {
+  font-size: 45px;
+  color: #05004E;
+}
+
+#intro span {
+  color: #FD5F00;
+}
+
+#role {
+  color: #05004E;
+  font-size: 20px;
+}
+
+#resume {
+  font-family: 'proxima';
+  font-size: 15px;
+  padding: 15px;
+  color: #fff;
+  background: #FD5F00;
+  letter-spacing: 1px;
+  transition: background-color 0.2s linear;
+  border-radius: 5px;
+}
+
+#resume:hover {
+  cursor: pointer;
+  background-color: #f12d2d;
+}
