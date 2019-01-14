@@ -16,6 +16,12 @@ html, body {
   font-weight: bold;
 }
 
+@font-face {
+  src: url('./fonts/Product\ Sans\ Regular.ttf');
+  font-family: 'product sans';
+  font-weight: normal;
+}
+
 nav {
   height: 60px;
   width: 100vw;
@@ -30,7 +36,7 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  width: 45vw;
+  width: 35vw;
   justify-content: space-around;
 }
 
@@ -48,11 +54,12 @@ nav {
 #landing {
   margin-top: 15vh;
   width: 100vw;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 #intro, #role {
@@ -61,7 +68,7 @@ nav {
 }
 
 #intro {
-  font-size: 45px;
+  font-size: 55px;
   color: #05004E;
 }
 
@@ -132,4 +139,76 @@ nav {
 
 #social-links > a:hover > div {
   background-color: #05004E;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#about > h1 {
+  font-family: 'product sans';
+  color: #05004E;
+}
+
+#about > hr {
+  width: 100%;
+  color: #05004E;
+  opacity: 0.1;
+}
+
+#about-content {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'product sans';
+  color: #05004E;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#about-text {
+  width: 50%;
+}
+
+#about-text p {
+  font-size: 18px;
+  line-height: 170%;
+}
+
+#about-text a {
+  color: inherit;
+  font-weight: bold;
+}
+
+#about-img {
+  height: 250px;
+  width: 250px;
+}
+
+#about-img > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+#about-contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 2px;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+#about-contact > .contact > span:nth-child(1) {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#about-contact > .contact > span:nth-child(3) {
+  font-style: italic;
 }
