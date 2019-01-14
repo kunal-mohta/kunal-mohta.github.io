@@ -1,3 +1,7 @@
+:root {
+  --nav-height: 60px;
+}
+
 html, body {
   margin: 0;
   overflow-x: hidden;
@@ -23,11 +27,31 @@ html, body {
 }
 
 nav {
-  height: 60px;
+  position: fixed;
+  top: 0;
+  height: var(--nav-height);
   width: 100vw;
   background: #FD5F00;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+#nav-home {
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-home svg {
+  height: 60%;
+  fill: #fff;
+  transition: fill 0.2s linear;
+}
+
+#nav-home svg:hover {
+  cursor: pointer;
+  fill: #05004E;
 }
 
 #menu {
@@ -36,7 +60,7 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  width: 35vw;
+  width: 40vw;
   justify-content: space-around;
 }
 
@@ -52,7 +76,7 @@ nav {
 }
 
 #landing {
-  margin-top: 15vh;
+  margin-top: calc(15vh + var(--nav-height));
   width: 100vw;
   height: 65vh;
   display: flex;
@@ -211,4 +235,38 @@ nav {
 
 #about-contact > .contact > span:nth-child(3) {
   font-style: italic;
+}
+
+@media all and (max-width: 600px) {
+  #nav-home {
+    width: 15vw;
+  }
+
+  #landing > #intro {
+    text-align: center;
+  }
+
+  #about-content {
+    width: 90%;
+    margin-top: 0px;
+  }
+
+  #about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  #about-img {
+    display: none;
+  }
+
+  #about-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about-contact .contact {
+    margin-top: 10px;
+  }
 }
