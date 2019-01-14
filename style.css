@@ -26,6 +26,10 @@ html, body {
   font-weight: normal;
 }
 
+[id^=mobile] {
+  display: none;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -45,6 +49,7 @@ nav {
 
 #nav-home svg {
   height: 60%;
+  width: 60%;
   fill: #fff;
   transition: fill 0.2s linear;
 }
@@ -238,8 +243,68 @@ nav {
 }
 
 @media all and (max-width: 600px) {
+  #landing {
+    margin-top: 16vh;
+    margin-bottom: 16vh;
+  }
+
   #nav-home {
     width: 15vw;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  [id^=mobile] {
+    display: block;
+  }
+
+  #mobile-menu-icon {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mobile-menu-icon > div {
+    width: 70%;
+  }
+
+  #mobile-menu-icon > div hr {
+    height: 3px;
+    background-color: #fff;
+    border: solid 1px #fff;
+    margin: 5px 0;
+    transform-origin: 50% 50%;
+    transition: opacity 0.2s linear, transform 0.2s linear;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: var(--nav-height);
+    width: 100vw;
+    background: #FD5F00;
+    font-family: 'proxima';
+    color: #fff;
+    font-size: 20px;
+    height: auto;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+    overflow: hidden;
+  }
+
+  #mobile-menu ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  #mobile-menu ul li {
+    padding: 20px 0;
   }
 
   #landing > #intro {
