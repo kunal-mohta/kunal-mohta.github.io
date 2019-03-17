@@ -41,7 +41,7 @@ nav {
 }
 
 #nav-home {
-  width: 5vw;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,14 +65,13 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  width: 40vw;
-  justify-content: space-around;
 }
 
 #menu li {
   font-family: 'proxima';
   color: #fff;
   transition: color 0.2s linear;
+  margin-right: 100px;
 }
 
 #menu li:hover {
@@ -81,7 +80,7 @@ nav {
 }
 
 #landing {
-  margin-top: calc(15vh + var(--nav-height));
+  padding-top: calc(15vh + var(--nav-height));
   width: 100vw;
   height: 65vh;
   display: flex;
@@ -174,19 +173,20 @@ nav {
   background-color: #05004E;
 }
 
-#about {
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: var(--nav-height);
   margin-bottom: 100px;
 }
 
-#about > h1 {
+.section > h1 {
   font-family: 'product sans';
   color: #05004E;
 }
 
-#about > hr {
+.section > hr {
   width: 100%;
   color: #05004E;
   opacity: 0.1;
@@ -253,6 +253,50 @@ nav {
   font-style: italic;
 }
 
+.card {
+  min-height: 100px;
+  min-width: 100px;
+  background: #fff;
+  box-shadow: 0 0 10px #00000044;
+  border-radius: 10px;
+  border: 1px #00000044 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'product sans';
+}
+
+.card-icon {
+  width: 45px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 120%;
+  margin-top: 5px;
+}
+
+#webdev-skills {
+  margin-top: 40px;
+}
+
+.webdev-partition {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+}
+
+.frontend-skills {
+  border-right: solid 1px #707070;
+}
+
+.frontend-skills, .backend-skills {
+  width: 20vw;
+  height: 200px;
+}
+
 @media all and (max-width: 800px) {
   #about-img {
     width: 40%;
@@ -262,12 +306,12 @@ nav {
 
 @media all and (max-width: 600px) {
   #landing {
-    margin-top: 16vh;
-    margin-bottom: 16vh;
+    padding-top: 16vh;
+    margin-bottom: 10vh;
   }
 
   #nav-home {
-    width: 15vw;
+    width: 70px;
   }
 
   #menu {
@@ -279,14 +323,14 @@ nav {
   }
 
   #mobile-menu-icon {
-    width: 15vw;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   #mobile-menu-icon > div {
-    width: 70%;
+    width: 40px;
   }
 
   #mobile-menu-icon > div hr {

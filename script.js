@@ -33,3 +33,16 @@ function toggleMenu () {
 }
 
 menuToggleButton.addEventListener('click', toggleMenu);
+
+window.onload = function () {
+  let jmpLinks = document.getElementsByClassName("jump-link");
+
+  for (let i = 0; i < jmpLinks.length; i++) {
+    if (jmpLinks[i].dataset.link) {
+      jmpLinks[i].addEventListener('click', function () {
+        jump(jmpLinks[i].dataset.link);
+        closeMenu();
+      });
+    }
+  }
+}
