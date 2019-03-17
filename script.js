@@ -34,6 +34,9 @@ function toggleMenu () {
 
 menuToggleButton.addEventListener('click', toggleMenu);
 
+
+/****** SMOOTH SCROLL ******/
+
 window.onload = function () {
   let jmpLinks = document.getElementsByClassName("jump-link");
 

@@ -9,6 +9,16 @@ html, body {
   background: #F9F8EB;
 }
 
+a {
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.2s linear;
+}
+
+a:hover {
+  color: #FD5F00;
+}
+
 @font-face {
   src: url('./fonts/ProximaNovaRegular.ttf');
   font-family: 'proxima';
@@ -253,7 +263,56 @@ nav {
   font-style: italic;
 }
 
-.card {
+.project-category {
+  font-family: 'product sans';
+  margin: 20px 0 0 0;
+}
+
+.project-category {
+  margin-top: 50px;
+}
+
+.projects-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  min-height: 100px;
+  width: 400px;
+  background: #fff;
+  box-shadow: 0 0 10px #00000044;
+  border-radius: 10px;
+  border: 1px #00000044 solid;
+  font-family: 'product sans';
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 120%;
+  margin-top: 0px;
+}
+
+.project-links > div {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.project-links > div > img {
+  margin-right: 5px;
+}
+
+.project-icon {
+  height: 20px;
+  width: auto;
+}
+
+/* .card {
   min-height: 100px;
   min-width: 100px;
   background: #fff;
@@ -295,7 +354,7 @@ nav {
 .frontend-skills, .backend-skills {
   width: 20vw;
   height: 200px;
-}
+} */
 
 @media all and (max-width: 800px) {
   #about-img {
