@@ -272,14 +272,14 @@ nav {
   margin-top: 50px;
 }
 
-.projects-container {
+.projects-container, .exp-container {
   width: 80%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.project-card {
+.project-card, .exp-card {
   min-height: 100px;
   width: 400px;
   background: #fff;
@@ -291,23 +291,36 @@ nav {
   margin-top: 20px;
 }
 
-.project-name {
+.project-name, .exp-title {
   font-weight: bold;
   font-size: 120%;
   margin-top: 0px;
 }
 
-.project-links > div {
+.exp-subtitle {
+  margin-bottom: 10px;
+}
+
+.project-links > div, .exp-info > div {
   display: flex;
   align-items: center;
   margin-top: 6px;
 }
 
-.project-links > div > img {
+.exp-info {
+  margin-bottom: 20px;
+}
+
+.exp-desc > ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.project-links > div > img, .exp-info > div > img {
   margin-right: 5px;
 }
 
-.project-icon {
+.project-icon, .exp-icon {
   height: 20px;
   width: auto;
 }
