@@ -1,3 +1,3 @@
 # kunal-mohta.github.io
 
-`STATUS: Under development`
+Personal website - <a href = "https://kunal-mohta.github.io" target = "_blank">Link</a>
